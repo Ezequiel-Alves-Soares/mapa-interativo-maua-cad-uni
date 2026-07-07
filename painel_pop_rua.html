@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel - Descumprimento de Condicionalidades | Vigilância Socioassistencial de Mauá</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Painéis e Indicadores</h1>
+
+    <p>Vigilância Socioassistencial | Secretaria de Assistência Social de Mauá</p>
+
+</header>
+
+<nav class="menu">
+
+    <a href="index.html">Home</a>
+
+    <a href="cadastro_unico.html">Cadastro Único</a>
+
+    <a href="territorio_cras.html">Território e CRAS</a>
+
+    <a href="boletins_informativos.html">Boletins Informativos</a>
+
+    <a href="paineis_indicadores.html">Painéis e Indicadores</a>
+
+    <a href="participe.html">Participe</a>
+
+</nav>
+
+<div class="container">
+
+    <section>
+
+        <h2>Pessoas em situação de rua inseridos na base de dados do Cadastro Único</h2>
+
+        <p>
+            O painel foi construído com base nos microdados do Cadastro Único. O processo consistiu na
+            filtragem e pseudo anonimização dos dados sensíveis, seguida pelo desenvolvimento de indicadores
+            e design no Public Tableau  e dispinibilizados/publicados para garantir o acesso online dinâmico.
+        </p>
+
+
+    </section>
+
+
+    <section>
+
+        <h2>Dashboard Interativo</h2>
+
+        <div class="dashboard-tableau">
+
+            <div class='tableauPlaceholder' id='viz1783081625161' style='position: relative'>
+
+                <noscript>
+                    <a href='#'>
+                        <img alt='Painel população de rua '
+                             src='https://public.tableau.com/static/images/Pa/PainelCadastroUnicoemMau/Painel2/1_rss.png'
+                             style='border: none'
+                        />
+                    </a>
+                </noscript>
+
+                <object class='tableauViz' style='display:none;'>
+
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+
+                    <param name='embed_code_version' value='3'/>
+
+                    <param name='site_root' value=''/>
+
+                    <param name='name' value='PainelCadastroUnicoemMau/Painel2'/>
+
+                    <param name='tabs' value='no'/>
+
+                    <param name='toolbar' value='yes'/>
+
+                    <param name='static_image'
+                           value='https://public.tableau.com/static/images/Pa/PainelCadastroUnicoemMau/Painel2/1.png'/>
+
+                    <param name='animate_transition' value='yes'/>
+                    <param name='display_static_image' value='yes'/>
+
+                    <param name='display_spinner' value='yes'/>
+
+                    <param name='display_overlay' value='yes'/>
+
+                    <param name='display_count' value='yes'/>
+
+                    <param name='language' value='pt-BR'/>
+
+                </object>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Objetivo do Painel</h2>
+
+        <ul>
+
+            <li> Monitorar o perfil sociodemográfico e as condições de sobrevivência da população em situação de rua no município.</li>
+
+            <li>Identificar vulnerabilidades críticas, como o tempo de permanência na rua e as disparidades no recorte étnico-racial.</li>
+
+            <li>Apoiar o planejamento das ações e intervenções realizadas pelo Centro POP, CRAS e CREAS.</li>
+
+            <li>Subsidiar a Vigilância Socioassistencial na produção de diagnósticos territoriais específicos para este público.</li>
+
+            <li>Fortalecer o monitoramento das estratégias de busca ativa e das políticas de acolhimento e reintegração social.</li>
+
+        </ul>
+
+    </section>
+
+
+    <div style="text-align:center; margin-top:40px;">
+
+        <a href="paineis_indicadores.html" class="btn">
+
+            ← Voltar para a Galeria de Painéis
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="footer">
+
+    <p>Equipe de Vigilância Socioassistencial</p>
+
+    <p>Secretaria de Assistência Social | Prefeitura de Mauá</p>
+
+</div>
+
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1783081625161');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if ( divElement.offsetWidth > 800 )
+    {
+    vizElement.style.width='1000px';vizElement.style.height='827px';
+    } 
+    else if ( divElement.offsetWidth > 500 )
+    { 
+    vizElement.style.width='1000px';
+    vizElement.style.height='827px';
+    } 
+    else 
+    { 
+    vizElement.style.width='100%';
+    vizElement.style.height='1677px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</body>
+
+</html>
