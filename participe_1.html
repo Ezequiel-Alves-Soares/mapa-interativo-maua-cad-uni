@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Participe - Vigilância Socioassistencial de Mauá</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Vigilância Socioassistencial</h1>
+
+    <p>Informação, território e proteção social em Mauá</p>
+
+</header>
+
+<nav class="menu">
+
+    <a href="index.html">Home</a>
+
+    <a href="cadastro_unico.html">Cadastro Único</a>
+
+    <a href="territorio_cras.html">Território e CRAS</a>
+
+    <a href="boletins_informativos.html">Boletins Informativos</a>
+
+    <a href="paineis_indicadores.html">Painéis e Indicadores</a>
+
+    <a href="participe.html">Participe</a>
+
+</nav>
+
+<div class="container">
+
+    <section>
+
+        <h2>Sua voz fortalece a Assistência Social</h2>
+
+        <p>
+
+            A Vigilância Socioassistencial produz diagnósticos, estudos e indicadores que apoiam o planejamento da
+            Política de Assistência Social em Mauá.
+
+        </p>
+
+        <p>
+
+            Sua participação é fundamental para identificar demandas dos territórios, aperfeiçoar os serviços ofertados
+            e fortalecer a proteção social no município.
+
+        </p>
+
+        <p>
+
+            As informações coletadas serão utilizadas exclusivamente para fins estatísticos e de planejamento,
+            contribuindo para o Diagnóstico Socioterritorial da Assistência Social.
+
+        </p>
+
+    </section>
+
+    <section class="formulario-card">
+
+        <h2>Pesquisa para Munícipes</h2>
+
+        <form
+                id="formSugestao"
+                action="https://script.google.com/macros/s/SEU_SCRIPT/exec"
+                method="POST"
+                target="resposta">
+
+            <h2>1. Identificação Territorial</h2>
+
+            <div class="campo">
+                <label for="nome">Nome (opcional)</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail (opcional)</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="campo">
+                <label for="rp">Região de Planejamento</label>
+
+                <select id="rp" name="regiao_planejamento" required>
+
+                    <option value="">Selecione</option>
+
+                    <option>RP 1</option>
+                    <option>RP 2</option>
+                    <option>RP 3</option>
+                    <option>RP 4</option>
+                    <option>RP 5</option>
+                    <option>RP 6</option>
+                    <option>RP 7</option>
+                    <option>RP 8</option>
+                    <option>RP 9</option>
+                    <option>RP 10</option>
+                    <option>RP 11</option>
+                    <option>RP 12</option>
+                    <option>RP 13</option>
+                    <option>RP 14</option>
+
+                </select>
+
+            </div>
+
+            <div class="campo">
+
+                <label>Bairro</label>
+
+                <input
+                        type="text"
+                        name="bairro"
+                        placeholder="Ex.: Jardim Zaíra">
+
+            </div>
+
+            <hr>
+
+            <h2>2. Uso dos Serviços (Últimos 6 meses)</h2>
+
+            <p>Marque todos os serviços utilizados:</p>
+
+            <div class="campo">
+
+                <label><input type="checkbox" id="cras" name="servicos" value="CRAS"> CRAS</label>
+
+                <label><input type="checkbox" id="creas" name="servicos" value="CREAS"> CREAS</label>
+
+                <label><input type="checkbox" id="centropop" name="servicos" value="Centro POP"> Centro POP</label>
+
+                <label><input type="checkbox" name="servicos" value="Central Cadastro Único"> Central do Cadastro Único</label>
+
+                <label><input type="checkbox" name="servicos" value="Nao utilizou"> Não utilizei nenhum serviço</label>
+
+            </div>
+
+            <hr>
+
+            <h2>3. Avaliação do CRAS</h2>
+
+            <div id="blocoCRAS" style="display:none;">
+
+                <h3>Avaliação do CRAS</h3>
+
+                <div class="campo">
+
+                    <label>Qual unidade você frequentou?</label>
+
+                    <select name="cras_unidade">
+
+                        <option>Falchi</option>
+
+                        <option>Feital</option>
+
+                        <option>Macuco</option>
+
+                        <option>Oratório</option>
+
+                        <option>Parque das Américas</option>
+
+                        <option>São João</option>
+
+                        <option>Vila Mercedes</option>
+
+                        <option>Zaíra</option>
+
+                    </select>
+
+                </div>
+
+                <div class="campo">
+
+                    <label>Em uma escala de 0 a 5 como você avalia a recepção e acolhimento do cras ?</label>
+
+                    <select name="cras_recepcao">
+
+                        <option>1</option>
+
+                        <option>2</option>
+
+                        <option>3</option>
+
+                        <option>4</option>
+
+                        <option>5</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2>4. Avaliação do CREAS</h2>
+
+            <div id="blocoCREAS" style="display:none;">
+
+                <h3>Avaliação do CREAS</h3>
+
+                <div class="campo">
+
+                    <label>Qual unidade você frequentou?</label>
+
+                    <select name="creas_unidade">
+                        <option>Matriz</option>
+                        <option>Bocaina</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2>5. Avaliação do Centro POP</h2>
+
+            <div id="blocoPOP" style="display:none;">
+
+                <h3>Avaliação do Centro POP</h3>
+                <div class="campo">
+    <textarea
+            name="centropop_sugestao">
+</textarea>
+                </div>
+
+
+            </div>
+
+            <hr>
+
+            <h2>6. Olhar sobre o Território</h2>
+
+            <div class="campo">
+
+                <label>
+
+                    Ao procurar informações sobre Bolsa Família ou BPC, as explicações foram:
+
+                </label>
+
+                <label><input type="radio" name="informacao" value="Sim"> Fáceis de entender</label>
+
+                <label><input type="radio" name="informacao" value="Razoavel"> Razoáveis</label>
+
+                <label><input type="radio" name="informacao" value="Confusas"> Muito confusas</label>
+
+            </div>
+
+            <div class="campo">
+
+                <label>
+
+                    Você conhece alguma família que necessita de ajuda da Assistência Social mas não consegue chegar ao
+                    CRAS?
+
+                </label>
+
+                <label><input type="radio" name="familia" value="Sim"> Sim</label>
+
+                <label><input type="radio" name="familia" value="Não"> Não</label>
+
+            </div>
+
+            <div class="campo">
+
+                <label>
+
+                    Se respondeu SIM, qual a principal dificuldade?
+
+                </label>
+
+                <textarea
+                        rows="4"
+                        name="dificuldade"></textarea>
+
+            </div>
+
+            <hr>
+
+            <h2>7. O Site da Vigilância</h2>
+
+            <div class="campo">
+
+                <label>
+
+                    Que tipo de informação você gostaria de encontrar neste portal?
+
+                </label>
+
+                <label>
+
+                    <input
+                            type="checkbox"
+                            name="portal"
+                            value="Pobreza">
+
+                    Onde há mais pobreza e como o governo está agindo
+
+                </label>
+
+                <label>
+
+                    <input
+                            type="checkbox"
+                            name="portal"
+                            value="Equipamentos">
+
+                    Localização de escolas, creches e serviços públicos
+
+                </label>
+
+                <label>
+
+                    <input
+                            type="checkbox"
+                            name="portal"
+                            value="Indicadores">
+
+                    Dados sobre desemprego e escolaridade
+
+                </label>
+
+                <label>
+
+                    <input
+                            type="checkbox"
+                            name="portal"
+                            value="Boletins">
+
+                    Boletins Informativos
+
+                </label>
+
+                <label>
+
+                    <input
+                            type="checkbox"
+                            name="portal"
+                            value="Mapas">
+
+                    Mapas Interativos
+
+                </label>
+
+            </div>
+
+            <hr>
+
+            <h2>8. Comentários Finais</h2>
+
+            <div class="campo">
+
+                <label>
+
+                    Deixe sugestões, elogios, reclamações ou informações importantes sobre seu território.
+
+                </label>
+
+                <textarea
+                        rows="8"
+                        name="comentarios"></textarea>
+
+            </div>
+
+            <button
+                    type="submit"
+                    class="btn">
+
+                Enviar Pesquisa
+
+            </button>
+
+        </form>
+
+        <iframe
+                name="resposta"
+                style="display:none;">
+        </iframe>
+
+        <div id="mensagemSucesso"></div>
+
+    </section>
+
+</div>
+
+<footer class="footer">
+
+    <p>Equipe de Vigilância Socioassistencial</p>
+
+    <p>Secretaria de Assistência Social | Prefeitura de Mauá</p>
+
+</footer>
+
+<script>
+
+    const form = document.getElementById("formSugestao");
+    const msg = document.getElementById("mensagemSucesso");
+
+    form.addEventListener("submit", function(){
+
+    msg.innerHTML="<p style='color:#0b5e20;font-weight:bold;'>Obrigado por participar! Sua contribuição foi registrada.</p>";
+
+    setTimeout(function(){
+
+    form.reset();
+
+    },1000);
+
+    });
+
+</script>
+<script>
+
+    const cras = document.getElementById("cras");
+    const creas = document.getElementById("creas");
+    const pop = document.getElementById("centropop");
+
+    cras.addEventListener("change",function(){
+
+        document.getElementById("blocoCRAS").style.display =
+            this.checked ? "block" : "none";
+
+    });
+
+    creas.addEventListener("change",function(){
+
+        document.getElementById("blocoCREAS").style.display =
+            this.checked ? "block" : "none";
+
+    });
+
+    pop.addEventListener("change",function(){
+
+        document.getElementById("blocoPOP").style.display =
+            this.checked ? "block" : "none";
+
+    });
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vigilância Socioassistencial - Mauá</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Vigilância Socioassistencial</h1>
+    <p>Informação, território e proteção social em Mauá</p>
+</header>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="cadastro_unico.html">Cadastro Único</a>
+    <a href="territorio_cras.html">Território e CRAS</a>
+    <a href="boletins_informativos.html">Boletins Informativos</a>
+    <a href="paineis_indicadores.html">Painéis e Indicadores</a>
+    <a href="participe.html">Participe</a>
+</nav>
+
+<div class="container">
+
+    <!-- INTRODUÇÃO -->
+    <section>
+        <h2>Contribua com a Vigilância Socioassistencial</h2>
+
+        <p>
+            A Vigilância Socioassistencial busca aperfeiçoar continuamente seus produtos, indicadores e ferramentas de gestão.
+        </p>
+
+        <p>
+            Caso identifique oportunidades de melhoria, sugestões de novos painéis, inconsistências em informações ou queira
+            compartilhar experiências relacionadas ao uso deste portal, envie sua contribuição por meio do formulário abaixo.
+        </p>
+
+        <p>
+            Sua participação é importante para fortalecer a gestão da informação e qualificar a Política de Assistência Social
+            no município de Mauá.
+        </p>
+    </section>
+
+    <!-- ORIENTAÇÃO -->
+    <section>
+        <h2>Envie sua contribuição</h2>
+
+        <p>
+            Utilize o formulário abaixo para registrar sugestões, apontar oportunidades de melhoria,
+            relatar inconsistências ou compartilhar ideias que contribuam para o fortalecimento da Vigilância Socioassistencial.
+        </p>
+
+        <div class="participacao-info">
+            <h3>Como sua contribuição será utilizada?</h3>
+
+            <ul>
+                <li>Sugestões de novos painéis e indicadores.</li>
+                <li>Melhorias na navegação do portal.</li>
+                <li>Correções de informações publicadas.</li>
+                <li>Propostas para novos boletins e estudos.</li>
+                <li>Aperfeiçoamento dos produtos da Vigilância Socioassistencial.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="formulario-card">
+
+        <h2>Formulário de participação</h2>
+
+        <form
+            id="formSugestao"
+            action="https://script.google.com/macros/s/AKfycbynP0MjuRE-C7gH7L8BOAjLS2VDM9649ddLo6_mMSyzejjO3nFdLx0_YD3WopPAK4kn/exec"
+            method="POST"
+            target="resposta"
+        >
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="campo">
+                <label for="tipo">Tipo da contribuição</label>
+                <select id="tipo" name="tipo">
+                    <option>Sugestão</option>
+                    <option>Correção</option>
+                    <option>Novo Painel</option>
+                    <option>Boletim</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Enviar contribuição
+            </button>
+
+        </form>
+
+        <iframe name="resposta" style="display:none;"></iframe>
+
+        <div id="mensagemSucesso"></div>
+
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Equipe de Vigilância Socioassistencial</p>
+    <p>Secretaria de Assistência Social | Prefeitura de Mauá</p>
+</footer>
+
+<!-- SCRIPT DE ENVIO + FEEDBACK -->
+<script>
+    const form = document.getElementById("formSugestao");
+    const msg = document.getElementById("mensagemSucesso");
+
+    form.addEventListener("submit", function () {
+
+        msg.innerHTML = "<p style='color:blue;font-weight:bold;'>Enviando contribuição...</p>";
+
+        setTimeout(() => {
+            form.reset();
+            msg.innerHTML = "<p style='color:green;font-weight:bold;'>Contribuição enviada com sucesso!</p>";
+        }, 1200);
+
+    });
+</script>
+
+</body>
+</html>
